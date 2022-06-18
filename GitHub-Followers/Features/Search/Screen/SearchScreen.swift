@@ -32,7 +32,7 @@ class SearchScreen: UIView {
         textField.minimumFontSize = 12
         textField.backgroundColor = .tertiarySystemBackground
         textField.autocorrectionType = .no
-        textField.placeholder = "Entre com o nome do usuario"
+        textField.placeholder = "Entre com o nome do usuario!"
         textField.returnKeyType = .go
         return textField
     }()
