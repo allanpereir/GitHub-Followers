@@ -24,13 +24,13 @@ class SearchVC: UIViewController {
     @objc func pushFollowerListVC () {
         
         if self.screen?.usernameTextField.text == nil || self.screen?.usernameTextField.text == "" {
-            print("Usuario não informado!")
+            print("Usuario não informado!!!")
             
         } else {
             let followerListVC = FollowersListVC()
             followerListVC.username = self.screen?.usernameTextField.text
             followerListVC.title = self.screen?.usernameTextField.text
-            navigationController?.pushViewController(followerListVC, animated: true)            
+            navigationController?.pushViewController(followerListVC, animated: true)
         }
 
     }
