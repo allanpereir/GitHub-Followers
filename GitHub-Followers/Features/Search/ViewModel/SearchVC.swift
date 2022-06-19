@@ -10,7 +10,7 @@ import UIKit
 class SearchVC: UIViewController {
 
     var screen: SearchScreen?
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         self.screen = SearchScreen()
@@ -24,8 +24,7 @@ class SearchVC: UIViewController {
     @objc func pushFollowerListVC () {
         
         if self.screen?.usernameTextField.text == nil || self.screen?.usernameTextField.text == "" {
-            print("Usuario não informado!!!")
-            
+            presentASAlertOnMainThread(title: "Usuario não informado", message: "Você não informou nenhum usuário, por favor informe um usuário", buttonTitle: "OK")
         } else {
             let followerListVC = FollowersListVC()
             followerListVC.username = self.screen?.usernameTextField.text
