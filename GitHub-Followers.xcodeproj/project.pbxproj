@@ -14,7 +14,6 @@
 		BC8B43EB285FA79000FCC921 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B43EA285FA79000FCC921 /* UIViewController+Ext.swift */; };
 		BCB6078A285E1BB1001D0055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB60789285E1BB1001D0055 /* AppDelegate.swift */; };
 		BCB6078C285E1BB1001D0055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6078B285E1BB1001D0055 /* SceneDelegate.swift */; };
-		BCB6078E285E1BB1001D0055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6078D285E1BB1001D0055 /* ViewController.swift */; };
 		BCB60793285E1BB3001D0055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB60792285E1BB3001D0055 /* Assets.xcassets */; };
 		BCB60796285E1BB3001D0055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB60794285E1BB3001D0055 /* LaunchScreen.storyboard */; };
 		BCB607A0285E1D4E001D0055 /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6079F285E1D4E001D0055 /* ASButton.swift */; };
@@ -24,6 +23,10 @@
 		BCB607B4285E6E58001D0055 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB607B3285E6E58001D0055 /* FavoritesScreen.swift */; };
 		BCB607B6285E75B5001D0055 /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB607B5285E75B5001D0055 /* FollowersListVC.swift */; };
 		BCB607BB285E761D001D0055 /* FollowersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB607BA285E761D001D0055 /* FollowersListScreen.swift */; };
+		BCF2051B28678D7200172574 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051A28678D7200172574 /* Follower.swift */; };
+		BCF2051D28678FE700172574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051C28678FE700172574 /* User.swift */; };
+		BCF205202867965800172574 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051F2867965800172574 /* NetworkManager.swift */; };
+		BCF205232867A8F600172574 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF205222867A8F600172574 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +38,6 @@
 		BCB60786285E1BB1001D0055 /* GitHub-Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub-Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB60789285E1BB1001D0055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB6078B285E1BB1001D0055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCB6078D285E1BB1001D0055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCB60792285E1BB3001D0055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB60795285E1BB3001D0055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB60797285E1BB3001D0055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		BCB607B3285E6E58001D0055 /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
 		BCB607B5285E75B5001D0055 /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
 		BCB607BA285E761D001D0055 /* FollowersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListScreen.swift; sourceTree = "<group>"; };
+		BCF2051A28678D7200172574 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		BCF2051C28678FE700172574 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BCF2051F2867965800172574 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BCF205222867A8F600172574 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC8B43E9285FA77000FCC921 /* Extention */ = {
+		BC8B43E9285FA77000FCC921 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
 				BC8B43EA285FA79000FCC921 /* UIViewController+Ext.swift */,
 			);
-			path = Extention;
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		BCB6077D285E1BB1001D0055 = {
@@ -86,16 +92,13 @@
 		BCB60788285E1BB1001D0055 /* GitHub-Followers */ = {
 			isa = PBXGroup;
 			children = (
-				BC8B43E9285FA77000FCC921 /* Extention */,
+				BCB60797285E1BB3001D0055 /* Info.plist */,
+				BCF2051E2867961400172574 /* Networking */,
+				BCF20519286789E600172574 /* Support */,
+				BC8B43E9285FA77000FCC921 /* Extentions */,
 				BCB607A2285E216A001D0055 /* Features */,
 				BCB607A1285E20F4001D0055 /* Model */,
 				BCB6079D285E1D17001D0055 /* Shared */,
-				BCB60789285E1BB1001D0055 /* AppDelegate.swift */,
-				BCB6078B285E1BB1001D0055 /* SceneDelegate.swift */,
-				BCB6078D285E1BB1001D0055 /* ViewController.swift */,
-				BCB60792285E1BB3001D0055 /* Assets.xcassets */,
-				BCB60794285E1BB3001D0055 /* LaunchScreen.storyboard */,
-				BCB60797285E1BB3001D0055 /* Info.plist */,
 			);
 			path = "GitHub-Followers";
 			sourceTree = "<group>";
@@ -103,6 +106,7 @@
 		BCB6079D285E1D17001D0055 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BCF205212867A87500172574 /* Utilities */,
 				BCB607AE285E231D001D0055 /* Constants */,
 				BCB6079E285E1D23001D0055 /* Components */,
 			);
@@ -124,6 +128,8 @@
 		BCB607A1285E20F4001D0055 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCF2051A28678D7200172574 /* Follower.swift */,
+				BCF2051C28678FE700172574 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +226,33 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		BCF20519286789E600172574 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BCB60789285E1BB1001D0055 /* AppDelegate.swift */,
+				BCB6078B285E1BB1001D0055 /* SceneDelegate.swift */,
+				BCB60792285E1BB3001D0055 /* Assets.xcassets */,
+				BCB60794285E1BB3001D0055 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BCF2051E2867961400172574 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2051F2867965800172574 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BCF205212867A87500172574 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BCF205222867A8F600172574 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,14 +324,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB607B6285E75B5001D0055 /* FollowersListVC.swift in Sources */,
+				BCF2051B28678D7200172574 /* Follower.swift in Sources */,
 				BCB607AD285E22F0001D0055 /* FavoritesListVC.swift in Sources */,
 				BC8B43E6285F9C9C00FCC921 /* ASBodyLabel.swift in Sources */,
+				BCF205232867A8F600172574 /* ErrorMessage.swift in Sources */,
+				BCF2051D28678FE700172574 /* User.swift in Sources */,
 				BC8B43E8285FA07100FCC921 /* ASContainerView.swift in Sources */,
-				BCB6078E285E1BB1001D0055 /* ViewController.swift in Sources */,
 				BCB607A7285E2222001D0055 /* SearchVC.swift in Sources */,
 				BC8B43E0285F71B300FCC921 /* ASAlertVC.swift in Sources */,
 				BC8B43E4285F9C0300FCC921 /* ASTitleLabel.swift in Sources */,
 				BCB607B4285E6E58001D0055 /* FavoritesScreen.swift in Sources */,
+				BCF205202867965800172574 /* NetworkManager.swift in Sources */,
 				BCB607B2285E67C0001D0055 /* SearchScreen.swift in Sources */,
 				BCB607A0285E1D4E001D0055 /* ASButton.swift in Sources */,
 				BCB607BB285E761D001D0055 /* FollowersListScreen.swift in Sources */,
