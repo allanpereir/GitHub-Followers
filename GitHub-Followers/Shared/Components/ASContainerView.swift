@@ -20,7 +20,6 @@ class ASContainerView: UIView {
     }
     
     private func configure () {
-        
         self.backgroundColor = .systemBackground
         self.layer.cornerRadius = 16
         self.layer.borderWidth  = 2

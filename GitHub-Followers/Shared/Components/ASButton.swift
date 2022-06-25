@@ -25,7 +25,7 @@ class ASButton: UIButton {
         self.setupButton()
     }
     
-    private func setupButton (){
+    private func setupButton () {
         self.layer.cornerRadius    = 10
         self.titleLabel?.textColor = .white
         self.titleLabel?.font      = UIFont.preferredFont(forTextStyle: .headline)
