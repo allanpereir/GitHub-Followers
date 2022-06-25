@@ -26,6 +26,7 @@
 		BCF2051B28678D7200172574 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051A28678D7200172574 /* Follower.swift */; };
 		BCF2051D28678FE700172574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051C28678FE700172574 /* User.swift */; };
 		BCF205202867965800172574 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051F2867965800172574 /* NetworkManager.swift */; };
+		BCF205232867A8F600172574 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF205222867A8F600172574 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		BCF2051A28678D7200172574 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		BCF2051C28678FE700172574 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BCF2051F2867965800172574 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BCF205222867A8F600172574 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		BCB6079D285E1D17001D0055 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BCF205212867A87500172574 /* Utilities */,
 				BCB607AE285E231D001D0055 /* Constants */,
 				BCB6079E285E1D23001D0055 /* Components */,
 			);
@@ -242,6 +245,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		BCF205212867A87500172574 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BCF205222867A8F600172574 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,6 +327,7 @@
 				BCF2051B28678D7200172574 /* Follower.swift in Sources */,
 				BCB607AD285E22F0001D0055 /* FavoritesListVC.swift in Sources */,
 				BC8B43E6285F9C9C00FCC921 /* ASBodyLabel.swift in Sources */,
+				BCF205232867A8F600172574 /* ErrorMessage.swift in Sources */,
 				BCF2051D28678FE700172574 /* User.swift in Sources */,
 				BC8B43E8285FA07100FCC921 /* ASContainerView.swift in Sources */,
 				BCB607A7285E2222001D0055 /* SearchVC.swift in Sources */,

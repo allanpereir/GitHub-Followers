@@ -15,7 +15,7 @@ class ASTitleLabel: UILabel {
     
     init(textAligment: NSTextAlignment, fontSize: CGFloat) {
         super.init(frame: .zero)
-        self.textAlignment = textAlignment
+        self.textAlignment = textAligment
         self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
         configure()
     }
