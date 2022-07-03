@@ -15,6 +15,8 @@ class FollowersListVC: UIViewController {
     
     var username: String!
     var followers: [Follower] = []
+    var page: Int = 1
+    var hasMoreFollwers = true
     var collection: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
     
@@ -22,7 +24,7 @@ class FollowersListVC: UIViewController {
         super.viewDidLoad()
         configureViewController()
         configureCollectionView()
-        getData ()
+        getData(username: username, page: page)
         configureDataSource()
     }
     
@@ -37,8 +39,9 @@ class FollowersListVC: UIViewController {
     }
     
     func configureCollectionView () {
-        collection = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
+        collection = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: self.view))
         view.addSubview(collection)
+        collection.delegate = self
         collection.backgroundColor = .systemBackground
         collection.register(FollwersCell.self, forCellWithReuseIdentifier: FollwersCell.reuseID)
     }
@@ -52,14 +55,14 @@ class FollowersListVC: UIViewController {
         })
     }
      
-    
-    func getData () {
-        NetWorkManager.shared.getDataFollowers(username: username, page: 1) { [weak self]result in
-            guard let self = self else {return}
+    func getData (username: String, page: Int) {
+        NetWorkManager.shared.getDataFollowers(username: username, page: page) { [weak self]result in
             
+            guard let self = self else { return }
             switch result {
             case .success(let followers):
-                self.followers = followers
+                if followers.count < 100 { self.hasMoreFollwers = false }
+                self.followers.append(contentsOf: followers)
                 self.updateData()
             case .failure(let error):
                 self.presentASAlertOnMainThread(title: "Algo deu errado", message: error.rawValue, buttonTitle: "Ok")
@@ -77,19 +80,18 @@ class FollowersListVC: UIViewController {
             self.dataSource.apply(snapshot, animatingDifferences: true)
         }
     }
-    
-    
-    func createThreeColumnFlowLayout() -> UICollectionViewFlowLayout {
-        let width                       = view.bounds.width
-        let padding: CGFloat            = 12
-        let minimumItemSpacing: CGFloat = 10
-        let availableWidth              = width - (padding * 2) - (minimumItemSpacing * 2)
-        let itemWith                    = availableWidth / 3
+}
+extension FollowersListVC: UICollectionViewDelegate {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let offsetY       = scrollView.contentOffset.y
+        let contentHeigth = scrollView.contentSize.height
+        let height        = scrollView.frame.size.height
         
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize =  CGSize(width: itemWith, height: itemWith + 40)
-        return flowLayout
+        if offsetY > contentHeigth - height {
+            
+            guard hasMoreFollwers else { return }
+            page += 1
+            getData(username: username, page: page)
+        }
     }
-     
 }

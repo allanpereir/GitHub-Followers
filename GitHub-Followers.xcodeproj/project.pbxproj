@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC569A9A2871C2DC00EE3F52 /* ASAvatarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC569A992871C2DC00EE3F52 /* ASAvatarImage.swift */; };
+		BC569A9C28722C1200EE3F52 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC569A9B28722C1200EE3F52 /* UIHelper.swift */; };
 		BC7DB1922868D38A0013799E /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DB1912868D38A0013799E /* K.swift */; };
 		BC8B43E0285F71B300FCC921 /* ASAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B43DF285F71B300FCC921 /* ASAlertVC.swift */; };
 		BC8B43E4285F9C0300FCC921 /* ASTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B43E3285F9C0300FCC921 /* ASTitleLabel.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		BC569A992871C2DC00EE3F52 /* ASAvatarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAvatarImage.swift; sourceTree = "<group>"; };
+		BC569A9B28722C1200EE3F52 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		BC7DB1912868D38A0013799E /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		BC8B43DF285F71B300FCC921 /* ASAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAlertVC.swift; sourceTree = "<group>"; };
 		BC8B43E3285F9C0300FCC921 /* ASTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTitleLabel.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF205222867A8F600172574 /* ErrorMessage.swift */,
+				BC569A9B28722C1200EE3F52 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				BCB6078A285E1BB1001D0055 /* AppDelegate.swift in Sources */,
 				BC8B43EB285FA79000FCC921 /* UIViewController+Ext.swift in Sources */,
 				BCB6078C285E1BB1001D0055 /* SceneDelegate.swift in Sources */,
+				BC569A9C28722C1200EE3F52 /* UIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

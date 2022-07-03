@@ -5,14 +5,15 @@
 //  Created by Alan Silva on 25/06/22.
 //
 
-import Foundation
+import UIKit
 
 typealias NetworkResult = (Result<[Follower], ErrorMessage>)
 
 class NetWorkManager {
         
     static let shared = NetWorkManager()
-    let baseURL = "https://api.github.com/users/"
+    private let baseURL = "https://api.github.com/users/"
+    let cache = NSCache<NSString, UIImage>()
     
     private init() {}
     
