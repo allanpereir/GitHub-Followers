@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC569A9A2871C2DC00EE3F52 /* ASAvatarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC569A992871C2DC00EE3F52 /* ASAvatarImage.swift */; };
+		BC7DB1922868D38A0013799E /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7DB1912868D38A0013799E /* K.swift */; };
 		BC8B43E0285F71B300FCC921 /* ASAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B43DF285F71B300FCC921 /* ASAlertVC.swift */; };
 		BC8B43E4285F9C0300FCC921 /* ASTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B43E3285F9C0300FCC921 /* ASTitleLabel.swift */; };
 		BC8B43E6285F9C9C00FCC921 /* ASBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B43E5285F9C9C00FCC921 /* ASBodyLabel.swift */; };
@@ -22,14 +24,16 @@
 		BCB607B2285E67C0001D0055 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB607B1285E67C0001D0055 /* SearchScreen.swift */; };
 		BCB607B4285E6E58001D0055 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB607B3285E6E58001D0055 /* FavoritesScreen.swift */; };
 		BCB607B6285E75B5001D0055 /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB607B5285E75B5001D0055 /* FollowersListVC.swift */; };
-		BCB607BB285E761D001D0055 /* FollowersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB607BA285E761D001D0055 /* FollowersListScreen.swift */; };
 		BCF2051B28678D7200172574 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051A28678D7200172574 /* Follower.swift */; };
 		BCF2051D28678FE700172574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051C28678FE700172574 /* User.swift */; };
 		BCF205202867965800172574 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051F2867965800172574 /* NetworkManager.swift */; };
 		BCF205232867A8F600172574 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF205222867A8F600172574 /* ErrorMessage.swift */; };
+		BCF4FCBE2868F58300C5D8FA /* FollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4FCBD2868F58300C5D8FA /* FollowersCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC569A992871C2DC00EE3F52 /* ASAvatarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAvatarImage.swift; sourceTree = "<group>"; };
+		BC7DB1912868D38A0013799E /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		BC8B43DF285F71B300FCC921 /* ASAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAlertVC.swift; sourceTree = "<group>"; };
 		BC8B43E3285F9C0300FCC921 /* ASTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTitleLabel.swift; sourceTree = "<group>"; };
 		BC8B43E5285F9C9C00FCC921 /* ASBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASBodyLabel.swift; sourceTree = "<group>"; };
@@ -47,11 +51,11 @@
 		BCB607B1285E67C0001D0055 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		BCB607B3285E6E58001D0055 /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
 		BCB607B5285E75B5001D0055 /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
-		BCB607BA285E761D001D0055 /* FollowersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListScreen.swift; sourceTree = "<group>"; };
 		BCF2051A28678D7200172574 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		BCF2051C28678FE700172574 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BCF2051F2867965800172574 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BCF205222867A8F600172574 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		BCF4FCBD2868F58300C5D8FA /* FollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC7DB18E2868D3390013799E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCF4FCBD2868F58300C5D8FA /* FollowersCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		BC8B43E9285FA77000FCC921 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 				BC8B43E3285F9C0300FCC921 /* ASTitleLabel.swift */,
 				BC8B43E5285F9C9C00FCC921 /* ASBodyLabel.swift */,
 				BC8B43E7285FA07100FCC921 /* ASContainerView.swift */,
+				BC569A992871C2DC00EE3F52 /* ASAvatarImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 		BCB607AE285E231D001D0055 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				BC7DB1912868D38A0013799E /* K.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -221,7 +235,7 @@
 		BCB607B9285E75E6001D0055 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				BCB607BA285E761D001D0055 /* FollowersListScreen.swift */,
+				BC7DB18E2868D3390013799E /* Cell */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -324,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB607B6285E75B5001D0055 /* FollowersListVC.swift in Sources */,
+				BC7DB1922868D38A0013799E /* K.swift in Sources */,
 				BCF2051B28678D7200172574 /* Follower.swift in Sources */,
 				BCB607AD285E22F0001D0055 /* FavoritesListVC.swift in Sources */,
 				BC8B43E6285F9C9C00FCC921 /* ASBodyLabel.swift in Sources */,
@@ -336,8 +351,9 @@
 				BCB607B4285E6E58001D0055 /* FavoritesScreen.swift in Sources */,
 				BCF205202867965800172574 /* NetworkManager.swift in Sources */,
 				BCB607B2285E67C0001D0055 /* SearchScreen.swift in Sources */,
+				BC569A9A2871C2DC00EE3F52 /* ASAvatarImage.swift in Sources */,
+				BCF4FCBE2868F58300C5D8FA /* FollowersCell.swift in Sources */,
 				BCB607A0285E1D4E001D0055 /* ASButton.swift in Sources */,
-				BCB607BB285E761D001D0055 /* FollowersListScreen.swift in Sources */,
 				BCB6078A285E1BB1001D0055 /* AppDelegate.swift in Sources */,
 				BC8B43EB285FA79000FCC921 /* UIViewController+Ext.swift in Sources */,
 				BCB6078C285E1BB1001D0055 /* SceneDelegate.swift in Sources */,
