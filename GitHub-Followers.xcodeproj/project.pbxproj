@@ -29,6 +29,7 @@
 		BCF2051D28678FE700172574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051C28678FE700172574 /* User.swift */; };
 		BCF205202867965800172574 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2051F2867965800172574 /* NetworkManager.swift */; };
 		BCF205232867A8F600172574 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF205222867A8F600172574 /* ErrorMessage.swift */; };
+		BCF480ED287B0D8400EAC80B /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF480EC287B0D8400EAC80B /* EmptyStateView.swift */; };
 		BCF4FCBE2868F58300C5D8FA /* FollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4FCBD2868F58300C5D8FA /* FollowersCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		BCF2051C28678FE700172574 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BCF2051F2867965800172574 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BCF205222867A8F600172574 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		BCF480EC287B0D8400EAC80B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		BCF4FCBD2868F58300C5D8FA /* FollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 		BCB607A2285E216A001D0055 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				BCF480EA287B0D3700EAC80B /* EmptyView */,
 				BCB607B7285E75CD001D0055 /* Followers */,
 				BCB607A8285E224E001D0055 /* Favorites */,
 				BCB607A3285E21C1001D0055 /* Search */,
@@ -270,6 +273,22 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		BCF480EA287B0D3700EAC80B /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				BCF480EB287B0D6100EAC80B /* Screen */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		BCF480EB287B0D6100EAC80B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BCF480EC287B0D8400EAC80B /* EmptyStateView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +369,7 @@
 				BC8B43E8285FA07100FCC921 /* ASContainerView.swift in Sources */,
 				BCB607A7285E2222001D0055 /* SearchVC.swift in Sources */,
 				BC8B43E0285F71B300FCC921 /* ASAlertVC.swift in Sources */,
+				BCF480ED287B0D8400EAC80B /* EmptyStateView.swift in Sources */,
 				BC8B43E4285F9C0300FCC921 /* ASTitleLabel.swift in Sources */,
 				BCB607B4285E6E58001D0055 /* FavoritesScreen.swift in Sources */,
 				BCF205202867965800172574 /* NetworkManager.swift in Sources */,
